@@ -34,23 +34,23 @@ const SocialIcons = () => {
 const Footer = () => {
   return (
     <footer className="bg-black text-[#EFEFEF] pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="px-6 mx-auto max-w-7xl md:px-12">
 
         {/* ====== TOP SECTION ====== */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 pb-12 border-b border-gray-700">
+        <div className="grid grid-cols-1 pb-12 border-b border-gray-700 md:grid-cols-3 gap-14">
 
           {/* ====== COMPANY INFO ====== */}
-          <div className="space-y-6">
-            <a href="/" className="relative block w-36 h-20 mx-auto md:mx-0">
+          <div className="space-y-6 ">
+            <a href="/" className="relative block h-20 mx-auto w-36 md:mx-0">
               <Image src={Logo} alt="Twin Solar Limited Logo" fill className="object-contain" />
             </a>
 
-            <p className="text-gray-300 leading-relaxed text-center md:text-left">
+            <p className="leading-relaxed text-center text-gray-300 md:text-left">
               Providing reliable & sustainable solar energy solutions across Nigeria.
               Powering homes, businesses, and the future.
             </p>
 
-            <SocialIcons />
+            <div className=" max-sm:flex max-sm:justify-center max-sm:items-center max-md:flex max-md:justify-center max-md:items-center"><SocialIcons /></div>
           </div>
 
           {/* ====== QUICK LINKS ====== */}
@@ -74,17 +74,17 @@ const Footer = () => {
             </h3>
 
             <div className="space-y-4 text-gray-300">
-              <p className="flex items-center justify-center md:justify-start gap-3">
+              <p className="flex items-center justify-center gap-3 md:justify-start">
                 <span className="w-8 h-8 bg-[#CF1F1F] text-white rounded-full flex items-center justify-center">📞</span>
-                <a href="tel:+2341234567890" className="hover:text-white transition">+234 123 456 7890</a>
+                <a href="tel:+2341234567890" className="transition hover:text-white">+234 123 456 7890</a>
               </p>
 
-              <p className="flex items-center justify-center md:justify-start gap-3">
+              <p className="flex items-center justify-center gap-3 md:justify-start">
                 <span className="w-8 h-8 bg-[#CF1F1F] text-white rounded-full flex items-center justify-center">📧</span>
-                <a href="mailto:twinsolarlimited25@gmail.com" className="hover:text-white transition">twinsolarlimited25@gmail.com</a>
+                <a href="mailto:twinsolarlimited25@gmail.com" className="transition hover:text-white">twinsolarlimited25@gmail.com</a>
               </p>
 
-              <p className="flex items-center justify-center md:justify-start gap-3">
+              <p className="flex items-center justify-center gap-3 md:justify-start">
                 {/* <span className="w-8 h-8 bg-[#CF1F1F] text-white rounded-full flex items-center justify-center">📍</span> */}
                 Shop B5/6 Complex Plaza, 10B Olojo Drive, Mile 10 Bus Stop, Lagos, Nigeria.
               </p>
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         {/* ====== COPYRIGHT ====== */}
-        <div className="pt-6 text-center text-gray-400 text-sm">
+        <div className="pt-6 text-sm text-center text-gray-400">
           &copy; {new Date().getFullYear()} Twin Solar Limited. Powered by Clean Energy | All Rights Reserved.
         </div>
       </div>

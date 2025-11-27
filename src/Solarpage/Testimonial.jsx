@@ -79,39 +79,39 @@ const Testimonial = () => {
   );
 
   return (
-    <section className="min-h-screen bg-gray-50 pt-24 pb-20 relative z-0">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <section className="relative z-0 min-h-screen pt-24 pb-20 bg-gray-50">
+      <div className="relative z-10 px-6 mx-auto max-w-7xl">
         {/* HEADER */}
-        <div className="text-center mb-16">
+        <div className="mb-16 text-center">
           <div className="inline-flex items-center gap-2 bg-[#CF1F1F]/10 text-[#CF1F1F] px-4 py-2 rounded-full text-sm font-medium mb-4">
             <span className="w-2 h-2 bg-[#CF1F1F] rounded-full"></span>
             Trusted by 500+ Clients
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
             What Our Clients Say
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="max-w-3xl mx-auto text-xl text-gray-600">
             Discover why businesses and homeowners across Nigeria trust Twin Solar Limited for their energy solutions
           </p>
         </div>
 
         {/* LEADERSHIP SECTION */}
         <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+          <div className="mb-12 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900">
               Meet Our Leadership
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-600">
               Experienced professionals dedicated to powering Nigeria future with sustainable energy
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
             {/* CEO Card */}
-           <div className="bg-black rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+           <div className="overflow-hidden transition-shadow duration-300 bg-black shadow-lg rounded-2xl hover:shadow-xl">
             <div className="p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+                <div className="flex flex-col items-center gap-6 md:flex-row">
+                <div className="relative flex-shrink-0 w-32 h-32 overflow-hidden rounded-full shadow-lg">
                     <Image 
                     src={ceoImg} 
                     fill
@@ -124,7 +124,7 @@ const Testimonial = () => {
                 <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold text-white">Precious Kelvin Obi</h3>
                     <p className="text-[#CF1F1F] font-semibold mb-3">Chief Executive Officer</p>
-                    <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <div className="flex items-center justify-center gap-2 mb-4 md:justify-start">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <span className="text-sm text-white">15+ Years Experience</span>
                     </div>
@@ -141,10 +141,10 @@ const Testimonial = () => {
             </div>
 
             {/* Manager Card */}
-            <div className="bg-black rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="overflow-hidden transition-shadow duration-300 bg-black shadow-lg rounded-2xl hover:shadow-xl">
   <div className="p-8">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+    <div className="flex flex-col items-center gap-6 md:flex-row">
+      <div className="relative flex-shrink-0 w-32 h-32 overflow-hidden rounded-full shadow-lg">
         <Image 
           src={managerImg} 
           fill
@@ -157,7 +157,7 @@ const Testimonial = () => {
       <div className="text-center md:text-left">
         <h3 className="text-2xl font-bold text-white">Deborah Blessing Ibitoye</h3>
         <p className="text-[#CF1F1F] font-semibold mb-3">Operations Manager</p>
-        <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
+        <div className="flex items-center justify-center gap-2 mb-4 md:justify-start">
           <div className="w-2 h-2 bg-green-500 rounded-full"></div>
           <span className="text-sm text-white">12+ Years Experience</span>
         </div>
@@ -173,11 +173,11 @@ const Testimonial = () => {
         </div>
 
         <div className="mb-20">
-  <div className="text-center mb-12">
-    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+  <div className="mb-12 text-center">
+    <h2 className="mb-3 text-3xl font-bold text-gray-900">
       Our Certification
     </h2>
-    <p className="text-gray-600 max-w-2xl mx-auto">
+    <p className="max-w-2xl mx-auto text-gray-600">
       Recognized and certified for delivering top-quality and industry-standard solar solutions.
     </p>
   </div>
@@ -188,7 +188,7 @@ const Testimonial = () => {
       zoom={true}
       navigation={true}
       slidesPerView={1}
-      className="rounded-xl shadow-lg"
+      className="shadow-lg rounded-xl"
     >
       <SwiperSlide>
         <div className="swiper-zoom-container">
@@ -207,11 +207,11 @@ const Testimonial = () => {
 
         {/* CLIENT REVIEWS */}
         <div className="testimonial-swiper">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+          <div className="mb-12 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900">
               Client Success Stories
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-600">
               Real experiences from our satisfied customers across Nigeria
             </p>
           </div>
@@ -235,18 +235,18 @@ const Testimonial = () => {
           >
             {clientReviews.map((review) => (
               <SwiperSlide key={review.id}>
-                <div className="bg-white rounded-2xl shadow-lg p-8 h-full hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex justify-between items-start mb-4">
+                <div className="h-full p-8 transition-shadow duration-300 bg-white shadow-lg rounded-2xl hover:shadow-xl">
+                  <div className="flex items-start justify-between mb-4">
                     {renderStars(review.rating)}
                     <span className="text-sm text-gray-500">{review.duration}</span>
                   </div>
 
-                  <blockquote className="text-gray-700 mb-6 leading-relaxed">
+                  <blockquote className="mb-6 leading-relaxed text-gray-700">
                     {review.review}
                   </blockquote>
 
                   <div className="mb-6">
-                    <div className="inline-flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-full">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full">
                       <span className="w-2 h-2 bg-[#CF1F1F] rounded-full"></span>
                       <span className="text-sm font-medium text-gray-700">
                         {review.project}
@@ -273,22 +273,22 @@ const Testimonial = () => {
 
         {/* CTA */}
         <div className="mt-20 bg-gradient-to-r from-[black] to-[black] rounded-2xl p-8 md:p-12 text-center text-white">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+          <h3 className="mb-4 text-2xl font-bold md:text-3xl">
             Ready to Join Our Satisfied Customers?
           </h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto text-lg">
+          <p className="max-w-2xl mx-auto mb-6 text-lg text-gray-300">
             Get your free solar assessment and join hundreds of happy clients enjoying reliable, sustainable energy.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="/Contact"
               className="bg-[#CF1F1F] text-white px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition-colors text-center"
             >
-              Get Free Assessment
+             Contact details
             </a>
             <a
-              href="tel:+2341234567890"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-colors text-center"
+              href="tel:+23409077565676"
+              className="px-8 py-4 font-semibold text-center text-white transition-colors border-2 border-white rounded-full hover:bg-white hover:text-gray-900"
             >
               Call: +234 09077565676
             </a>
