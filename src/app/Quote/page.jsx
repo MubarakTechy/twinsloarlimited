@@ -104,7 +104,7 @@ const QuoteForm = () => {
       />
 
       <motion.div
-        className="min-h-screen bg-gray-100 flex justify-center items-center p-6"
+        className="flex items-center justify-center min-h-screen p-6 bg-gray-100"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -114,7 +114,7 @@ const QuoteForm = () => {
           variants={parentVariants}
           initial="hidden"
           animate="visible"
-          className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-xl space-y-6"
+          className="w-full max-w-xl p-8 space-y-6 bg-white shadow-xl rounded-2xl"
         >
           {/* Logo */}
           <motion.div variants={childVariants} className="flex justify-center">
@@ -136,19 +136,19 @@ const QuoteForm = () => {
             Request a Quote
           </motion.h2>
 
-          <motion.p variants={childVariants} className="text-center text-gray-600 -mt-3">
+          <motion.p variants={childVariants} className="-mt-3 text-center text-gray-600">
             Get an accurate solar installation quote from Twin Solar Limited
           </motion.p>
 
           {/* Full Name */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Full Name</label>
+            <label className="block mb-1 font-medium text-gray-700">Full Name</label>
             <input
               type="text"
               name="fullname"
               value={formData.fullname}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               placeholder="Enter your full name"
               required
             />
@@ -156,13 +156,13 @@ const QuoteForm = () => {
 
           {/* Phone */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Phone Number</label>
+            <label className="block mb-1 font-medium text-gray-700">Phone Number</label>
             <input
               type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               placeholder="e.g. 08012345678"
               required
             />
@@ -170,13 +170,13 @@ const QuoteForm = () => {
 
           {/* Email */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Email</label>
+            <label className="block mb-1 font-medium text-gray-700">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               placeholder="example@gmail.com"
               required
             />
@@ -184,13 +184,13 @@ const QuoteForm = () => {
 
           {/* Location */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Location</label>
+            <label className="block mb-1 font-medium text-gray-700">Location</label>
             <input
               type="text"
               name="location"
               value={formData.location}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               placeholder="City / State"
               required
             />
@@ -198,12 +198,12 @@ const QuoteForm = () => {
 
           {/* Preferred System Size */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Preferred System Size</label>
+            <label className="block mb-1 font-medium text-gray-700">Preferred System Size</label>
             <select
               name="systemSize"
               value={formData.systemSize}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               required
             >
               <option value="">Select...</option>
@@ -216,13 +216,13 @@ const QuoteForm = () => {
 
           {/* Message */}
           <motion.div variants={childVariants}>
-            <label className="block text-gray-700 font-medium mb-1">Additional Message</label>
+            <label className="block mb-1 font-medium text-gray-700">Additional Message</label>
             <textarea
               rows="4"
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
               placeholder="Tell us more about your power needs"
             />
           </motion.div>
@@ -234,7 +234,7 @@ const QuoteForm = () => {
             whileTap={{ scale: 0.95 }}
             type="submit"
             disabled={loading}
-            className="w-full bg-red-600 text-white font-semibold p-3 rounded-lg hover:bg-red-700 duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full p-3 font-semibold text-white duration-300 bg-red-600 rounded-lg hover:bg-red-700 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {loading ? "Submitting..." : "Request Quote"}
           </motion.button>

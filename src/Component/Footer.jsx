@@ -60,7 +60,7 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3">
-              <li><Link href="/about" className="text-gray-300 hover:text-[#CF1F1F] transition">About Us</Link></li>
+              <li><Link href="/About" className="text-gray-300 hover:text-[#CF1F1F] transition">About Us</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-[#CF1F1F] transition">Services</Link></li>
               <li><Link href="/Faq" className="text-gray-300 hover:text-[#CF1F1F] transition">FAQ</Link></li>
               <li><Link href="/Contact" className="text-gray-300 hover:text-[#CF1F1F] transition">Contact</Link></li>
@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="space-y-4 text-gray-300">
               <p className="flex items-center justify-center gap-3 md:justify-start">
                 <span className="w-8 h-8 bg-[#CF1F1F] text-white rounded-full flex items-center justify-center">📞</span>
-                <a href="tel:+2341234567890" className="transition hover:text-white">+234 123 456 7890</a>
+                <a  href="tel:+23409077565676" className="transition hover:text-white">+234 907 756 5676</a>
               </p>
 
               <p className="flex items-center justify-center gap-3 md:justify-start">
